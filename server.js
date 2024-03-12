@@ -7,6 +7,7 @@ const port = process.env.PORT || 8000
 
 const app = express()
 app.use(parser.json())
+app.use(cors())
 
 //get request...
 app.get('/',(req,res)=>{
